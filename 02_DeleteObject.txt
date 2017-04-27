@@ -24,3 +24,10 @@ If the cube is selected (standard scene) it will also be deleted. So we should d
 >>> bpy.data.objects['Camera'].select = True
 >>> bpy.ops.object.delete()
 {'FINISHED'}
+
+Please select all objects and delete them. Then we can continue...
+
+>>> import bpy
+>>> bpy.ops.object.select_all(action='SELECT')
+>>> bpy.ops.object.delete()
+{'FINISHED'}
