@@ -1,0 +1,2 @@
+Blender Python API:
+https://docs.blender.org/api/blender_python_api_current/
