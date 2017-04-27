@@ -1,0 +1,18 @@
+After deleting all objects (02_DeleteObject.txt) we create a new cylinder (with the primitive method)
+
+>>> import bpy
+>>> bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=1.0, depth=2.0, end_fill_type='NGON')
+{'FINISHED'}
+
+Please search the API for all parameters (Mesh Operators)
+
+bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=1.0, depth=2.0, end_fill_type='NGON', view_align=False, enter_editmode=False, location=(0.0, 0.0, 0.0), rotation=(0.0, 0.0, 0.0), layers=(False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False))
+
+Just browse the list of all mesh operators and create some objects
+
+>>> import bpy
+>>> bpy.ops.mesh.primitive_monkey_add(view_align=False, enter_editmode=False, location=(1.0, 1.0, 1.0), rotation=(0.0, 0.0, 0.0))
+
+What other methods for creating a object are available?
+
+https://wiki.blender.org/index.php/Dev:Py/Scripts/Cookbook/Code_snippets/Three_ways_to_create_objects
