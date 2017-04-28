@@ -1,0 +1,11 @@
+Duplicate a selected object at the same location
+
+>>> import bpy
+>>> bpy.ops.object.duplicate()
+{'FINISHED'}
+
+Duplicate a selected object and move it to location=(2.0, 2.0, 2.0)
+
+>>> import bpy
+>>> bpy.ops.object.duplicate_move(OBJECT_OT_duplicate={"linked":False, "mode":'TRANSLATION'}, TRANSFORM_OT_translate={"value":(2, 2, 2)})
+{'FINISHED'}
