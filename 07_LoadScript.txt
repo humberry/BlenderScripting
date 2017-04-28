@@ -1,0 +1,23 @@
+Okay, now it's time to write a .py file and execute it.
+Because we like to see the output, it is necessary to install the "console_run_script.py" add-on.
+
+1.) Copy the code section to a new file and save it as "console_run_script.py"
+https://blenderartists.org/forum/showthread.php?312821-Run-Script-in-PyConsole-%2528Menu%2529
+
+2.) Open blender => File => User Preferences... => Add-ons => Install from File... => "console_run_script.py" => Enable / Check it => Save User Settings
+
+3.) Change to the Python Console and check if there is a menu item called "Run script"
+
+4.) Change to the Text Editor and click at the Syntax highlight ("ab")
+
+5.) Write and Save your scripts in this view and run them in the Python Console
+
+6.) E.g. write this program and save it as 07_LoadScript_01.py
+
+import bpy
+print("Blender is alive!!!")
+
+7.) Python Console => Console => "Run script" => 07_LoadScript_01.py
+
+>>> exec(compile(bpy.data.texts['07_LoadScript_01.py'].as_string(), '07_LoadScript_01.py', 'exec'))
+Blender is alive!!!
