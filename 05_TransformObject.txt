@@ -1,0 +1,28 @@
+Which objects do I have in a standard scene?
+
+>>> list(bpy.data.objects)
+[bpy.data.objects['Camera'], bpy.data.objects['Cube'], bpy.data.objects['Lamp']]
+
+How can I change the cube location?
+
+>>> bpy.ops.object.select_all(action='DESELECT')
+>>> bpy.data.objects['Cube'].select = True
+>>> bpy.ops.transform.translate(value=(-1, -1, -1))
+
+How can I change the cube size?
+
+>>> bpy.ops.object.select_all(action='DESELECT')
+>>> bpy.data.objects['Cube'].select = True
+>>> bpy.ops.transform.transform(mode='RESIZE', value=(0.5, 0.5, 0.5, 0)) #divide each side by 2
+or
+>>> bpy.ops.transform.transform(mode='RESIZE', value=(2, 2, 2, 0))       #multiply each side by 2
+or
+>>> bpy.ops.transform.resize(value=(5.0, 5.0, 5.0))                      #very big :)
+
+Howto rotate?       
+
+>>> from math import pi
+>>> import bpy
+>>> bpy.ops.transform.rotate(value=pi/4, axis=(True, False, False))          #rotate x-axis by 45°
+>>> bpy.ops.transform.rotate(value=pi/4, axis=(False, True, False))          #rotate y-axis by 45°
+>>> bpy.ops.transform.rotate(value=pi/4, axis=(False, False, True))          #rotate z-axis by 45°
