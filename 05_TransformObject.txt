@@ -1,16 +1,19 @@
 Which objects do I have in a standard scene?
 
+>>> import bpy
 >>> list(bpy.data.objects)
 [bpy.data.objects['Camera'], bpy.data.objects['Cube'], bpy.data.objects['Lamp']]
 
 How can I change the cube location?
 
+>>> import bpy
 >>> bpy.ops.object.select_all(action='DESELECT')
 >>> bpy.data.objects['Cube'].select = True
 >>> bpy.ops.transform.translate(value=(-1, -1, -1))
 
 How can I change the cube size?
 
+>>> import bpy
 >>> bpy.ops.object.select_all(action='DESELECT')
 >>> bpy.data.objects['Cube'].select = True
 >>> bpy.ops.transform.transform(mode='RESIZE', value=(0.5, 0.5, 0.5, 0)) #divide each side by 2

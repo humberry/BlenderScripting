@@ -1,0 +1,35 @@
+How many objects exists and their names:
+
+>>> import bpy
+>>> print(str(len(bpy.data.objects)) + " objects exist.")
+3 objects exist.
+
+>>> for i in range(0, len(bpy.data.objects)):
+...     print("bpy.data.objects[" + str(i) + "].name = " + bpy.data.objects[i].name)
+...     
+bpy.data.objects[0].name = Camera
+bpy.data.objects[1].name = Cube
+bpy.data.objects[2].name = Lamp
+
+Change the name of an object:
+
+>>> import bpy
+>>> bpy.data.objects[1].name = 'MyCube'
+>>> for i in range(0, len(bpy.data.objects)):
+...     print("bpy.data.objects[" + str(i) + "].name = " + bpy.data.objects[i].name)
+...     
+bpy.data.objects[0].name = Camera
+bpy.data.objects[1].name = Lamp
+bpy.data.objects[2].name = MyCube
+
+Show me the selected objects:
+
+>>> import bpy
+>>> print(bpy.context.selected_objects)
+[bpy.data.objects['MyCube']]
+
+>>> print(bpy.context.selected_objects)
+[bpy.data.objects['MyCube'], bpy.data.objects['Lamp']]
+
+>>> print(bpy.context.selected_objects)
+[bpy.data.objects['MyCube'], bpy.data.objects['Lamp'], bpy.data.objects['Camera']]
