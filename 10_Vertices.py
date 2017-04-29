@@ -32,7 +32,7 @@ bpy.ops.object.mode_set(mode='EDIT')
 bpy.ops.mesh.select_all(action='DESELECT')
 bpy.ops.object.mode_set(mode='OBJECT')
 
-#select four vertices
+#select four vertices and delete them
 verts = [4,5,6,7]
 for v in verts:
     bpy.context.object.data.vertices[v].select = True
