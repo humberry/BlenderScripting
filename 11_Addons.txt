@@ -1,5 +1,6 @@
 Okay, there are great add-on tutorials available. Here you find some tips and links:
 
+!!! I'm not responsible for the content of external websites !!!
 https://docs.blender.org/api/current/info_tutorial_addon.html
 https://docs.blender.org/api/blender_python_api_current/bpy.types.Operator.html
 http://michelanders.blogspot.de/p/creating-blender-26-python-add-on.html
