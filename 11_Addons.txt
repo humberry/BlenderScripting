@@ -1,0 +1,23 @@
+Okay, there are great add-on tutorials available. Here you find some tips and links:
+
+https://docs.blender.org/api/current/info_tutorial_addon.html
+https://docs.blender.org/api/blender_python_api_current/bpy.types.Operator.html
+http://michelanders.blogspot.de/p/creating-blender-26-python-add-on.html
+
+Execute a script via the python console (<<<test the script>>>):
+1.) Open https://docs.blender.org/api/current/info_tutorial_addon.html and go to the section "Write the Addon (Simple)"
+2.) Copy and paste the "ObjectMoveX" example to to buildin text editor
+3.) Save it as "ObjectMoveX.py"
+4.) Check that there's at least one object (in front view)
+5.) Open an python console and "Run Script" => "ObjectMoveX.py" (check 07_LoadScript.txt if you miss the menu item)
+6.) Type command >>> ObjectMoveX.execute(None, bpy.context)
+Now every object should move 1 blender unit to the right.
+
+Execute a script via the operator search dialog (<<<register the script>>>):
+1.) to 3.) as above
+4.) Open the User Preferences (CTRL+ALT+U) => Add-ons => Install from File... => "ObjectMoveX.py" => Check it => Save User Settings
+5.) Press the spacebar (e.g. in 3D View) => Type "Move X by One" + ENTER
+Now every object should move 1 blender unit to the right and next time you start blender you only have to repeat step 5.
+
+How to remove an addon:
+Open the User Preferences (CTRL+ALT+U) => Add-ons => Click the small triangle (in front of the checkbox) an click remove
