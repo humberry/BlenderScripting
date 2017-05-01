@@ -44,6 +44,14 @@ bpy.ops.object.mode_set(mode='OBJECT')
 bpy.context.object.data.vertices.add(2)
 bpy.context.object.data.vertices[-1].co = (0.5, 0.5, -0.5)
 bpy.context.object.data.vertices[-2].co = (0.5, -0.5, -0.5)
+
+#add three edges
+bpy.context.object.data.edges.add(3)
+bpy.context.object.data.edges[-1].vertices = [4, 5]
+bpy.context.object.data.edges[-2].vertices = [2, 5]
+bpy.context.object.data.edges[-3].vertices = [0, 4]
 bpy.ops.object.mode_set(mode='EDIT')
 
-#to be continued
+#and one face
+bpy.ops.mesh.edge_face_add()
+bpy.ops.object.mode_set(mode='OBJECT')
