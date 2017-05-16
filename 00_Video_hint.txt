@@ -1,0 +1,10 @@
+!!! I'm not responsible for the content of external websites !!!
+
+Okay here you find two good short videos...
+
+Blender Addons with Python Tutorial:
+https://www.youtube.com/watch?v=OEkrQGFqM10
+
+Blender Addon: Custom Operator Tutorial:
+https://www.youtube.com/watch?v=Ywza-zyAJzE
+
