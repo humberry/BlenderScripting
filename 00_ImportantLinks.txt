@@ -4,3 +4,6 @@ https://docs.blender.org/api/blender_python_api_current/
 
 Tutorial: Meshes with Python & Blender - Cubes and Matrices
 http://www.sinestesia.co/blog/tutorials/python-cube-matrices/
+
+Troubleshoot python scripts
+https://www.youtube.com/watch?v=sODI4y3A6sw
