@@ -9,3 +9,5 @@ Blender Addon: Custom Operator Tutorial:
 https://www.youtube.com/watch?v=Ywza-zyAJzE
 
 https://www.blendernation.com/2018/01/28/blender-addon-programming-draw-viewport/
+
+https://www.blendernation.com/2018/03/22/blender-symmetrize-mesh-tutorial/
