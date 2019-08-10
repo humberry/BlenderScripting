@@ -16,3 +16,5 @@ ImportantLinks
 
 The contents of this repo are released under the MIT License.
 
+External links disclaimer:<br>
+I'm not responsible for the content of external websites.<br>
